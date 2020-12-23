@@ -15,7 +15,23 @@ function displayEnabled(){
 //add_action( 'admin_notices', 'displayEnabled' );
 
 function displayAdminMenu(){
-    echo "Tu es sur la page de mon extension.";
+    echo "<h1>SupWPPlugin</h1><br>
+            <h2>Accueil</h2>
+            <p>Tu es sur la page de mon extension.</p>
+            <br>
+            <h3>A quoi sert le plugin ? </h3>
+            <p>Pour le moment à rien, c'est juste le premier plugin que je développe en formation.</p>
+            <br><br>
+            <h3>Informations de maintenance</h3>
+            <br>
+            <p>Plugin Name: SupWPPlugin<br>
+                Plugin URI:<br>
+                Description: Mon premier plugin WordPress<br>
+                Author: Valentin Gratz<br>
+                Version: 0.0.1<br>
+                Author URI: http://www.valentin-gratz.xyz
+                <br><br>
+                Compatible : version 5.6</p>";
 }
 
 function createMenu(){
