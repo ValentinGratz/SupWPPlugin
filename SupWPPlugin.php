@@ -21,13 +21,12 @@ function displayAdminMenu(){
 function createMenu(){
     add_menu_page("SupWPPlugin",
         "MonPlugin",
-        "manage_option",
+        "manage_options",
         "monPlugin",
-        "displayAdminPlugin",
+        "displayAdminMenu",
         "",
-        1); 
-
-
-add_action('admin_menu', "createMenu");
+        1);
 
 }
+
+add_action('admin_menu', "createMenu"); //mettre en dehors de la function
