@@ -17,6 +17,7 @@ function generateCSS(){
     wp_register_style('monCSSBootstrap', plugins_url('SupWPPlugin/assets/bootstrap.css'));
 }
 
+
 add_action( 'admin_head', 'generateCSS' );
 
 function displayAdminMenu(){
