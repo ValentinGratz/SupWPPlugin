@@ -12,9 +12,17 @@ function displayEnabled(){
     echo "<script> alert('Mon plugin est active !') </script>";
 }
 
-//add_action( 'admin_notices', 'displayEnabled' );
+// crochet qui va executer generateCSS
+function generateCSS(){
+    wp_register_style('monCSSBootstrap', plugins_url('SupWPPlugin/assets/bootstrap.css'));
+}
+
+add_action( 'admin_head', 'generateCSS' );
 
 function displayAdminMenu(){
+
+    wp_enqueue_style('monCSSBootstrap');
+
     echo "<h1>SupWPPlugin</h1><br>
             <h2>Accueil</h2>
             <p>Tu es sur la page de mon extension.</p>
