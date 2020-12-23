@@ -25,7 +25,7 @@ function createMenu(){
         "monPlugin",
         "displayAdminPlugin",
         "",
-        1);  2222
+        1); 
 
 
 add_action('admin_menu', "createMenu");
